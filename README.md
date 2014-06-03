@@ -13,7 +13,7 @@ Requirements
 
 - Apache 2 Web Server 
 - PHP 5.x configured with the following extensions:
-- cURL
+  - cURL
 - USPS API Username
 
 Examples
