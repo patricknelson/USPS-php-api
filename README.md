@@ -13,14 +13,28 @@ Requirements
 
 - Apache 2 Web Server 
 - PHP 5.x configured with the following extensions:
-  - CUrl
+- cURL
 - USPS API Username
 
 Examples
 =======
 
-Please check the 'demos' directory for usage examples on the various types of api calls and actions you can perform.
+To incorporate into your project using `composer`, see the following example `composer.json` file:
 
+
+	{
+		"require": {
+			"alexanderreiff/usps-php-api": "dev-master"
+		},
+		"repositories": [
+			{
+				"type": "git",
+				"url": "git://github.com/patricknelson/USPS-php-api.git"
+			}
+		]
+	}
+
+Then run `composer install` from the root directory of your project.
 
 Authors
 =======
