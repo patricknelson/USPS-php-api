@@ -21,7 +21,6 @@ Examples
 
 To incorporate into your project using `composer`, see the following example `composer.json` file:
 
-
 	{
 		"require": {
 			"alexanderreiff/usps-php-api": "dev-master"
