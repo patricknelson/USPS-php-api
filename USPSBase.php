@@ -132,7 +132,7 @@ class USPSBase {
     	$opts = self::$CURL_OPTS;
     	$opts[CURLOPT_POSTFIELDS] = http_build_query($this->getPostData(), null, '&');
     	$opts[CURLOPT_URL] = self::$testMode ? self::TEST_API_URL : self::LIVE_API_URL ;
-    	
+
 		// set options
 		curl_setopt_array($ch, $opts);
 
@@ -256,6 +256,15 @@ class USPSBase {
 	 */
 	public function getResponse() {
 		return $this->response;
+	}
+	/**
+	 * Get the raw request XML (passthrough to ->getXMLString() for consistency with ->getResponse() API and response
+	 * format).
+	 *
+	 * @return string
+	 */
+	public function getRequest() {
+		return $this->getXMLString();
 	}
 	/**
 	 * Set the headers
